@@ -12,12 +12,12 @@ namespace AuthServer
         {
             var host = CreateWebHostBuilder(args).Build();
             // Add test data into database
-            using (var scope = host.Services.CreateScope())
-            {
-                var context = scope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
+            //using (var scope = host.Services.CreateScope())
+            //{
+            //    var context = scope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
 
-                TestDataConfig.AddConfigData(context);
-            }
+            //    TestDataConfig.AddConfigData(context);
+            //}
 
             host.Run();
         }
