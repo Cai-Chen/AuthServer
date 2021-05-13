@@ -24,7 +24,6 @@ namespace AuthServer
                 .ConfigDatabase(Configuration)
                 .ConfigIdentity()
                 .ConfigIdentityServer(Configuration);
-
         }
 
         public static void Configure(IApplicationBuilder app, IWebHostEnvironment env)
